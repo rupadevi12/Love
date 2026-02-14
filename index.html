@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* background: linear-gradient(135deg, #ff6a88, #ff99ac); */
+            background-image: url("./WhatsApp\ Image\ 2026-02-14\ at\ 12.20.37\ PM.jpeg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background:transparent;
+            width: 330px;
+            height: 450px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 20px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fade 0.6s ease-in-out;
+            font-style: italic;
+
+        }
+
+        .card.active {
+            display: flex;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h2 {
+            color: #ff2e63;
+        }
+
+        p {
+            font-size: 18px;
+            color:white;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 30px;
+            background: #ff2e63;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e6004c;
+        }
+
+        .emoji {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Rose Day -->
+<div class="card active">
+    <div class="emoji">🌹</div>
+    <h2>Rose Day</h2>
+    <p>This rose is not just a flower… it carries my love, my smile, and my heart for you, Bava.” ❤️</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Propose Day -->
+<div class="card">
+    <div class="emoji">💍</div>
+    <h2>Propose Day</h2>
+    <p>Will you be my Universe BAVA 💕</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Chocolate Day -->
+<div class="card">
+    <div class="emoji">🍫</div>
+    <h2>Chocolate Day</h2>
+    <p>"Like chocolate melts in the mouth, my heart melts when I see you.” 😍</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Teddy Day -->
+<div class="card">
+    <div class="emoji">🧸</div>
+    <h2>Teddy Day</h2>
+    <p>Happy Teddy Day, bava! I wish I was your teddy so I could hug you all day 🥰</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Promise Day -->
+<div class="card">
+    <div class="emoji">🤝</div>
+    <h2>Promise Day</h2>
+    <p>On this Promise Day, I don’t just promise you big words… I promise you my real, honest love.
+        I promise to stay with you in your happiest moments and also when life feels heavy. 
+         I promise to understand you, respect you, and support your dreams as if they are mine. 
+         No matter how many fights, misunderstandings, or distance come between us, my heart will always choose you. 
+         I promise to love you not just today, 
+        but every single day of my life, with the same pure feeling. 💖✨ ❤️</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Hug Day -->
+<div class="card">
+    <div class="emoji">🤗</div>
+    <h2>Hug Day</h2>
+    <p>Happy Hug Day Bava! A hug is not just a physical touch… it’s a silent promise.
+         It’s the feeling of being understood without words, the comfort of knowing someone is there no matter what. 
+         When I hug you, I’m holding your fears, your dreams, your tired days, and your happiest moments all at once. 
+         It’s my way of saying “I’m here, I care, and I won’t leave.”
+         Even when we’re apart, my hug will always reach you and remind you how deeply you are loved. 🤗💖💞</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Kiss Day -->
+<div class="card">
+    <div class="emoji">😘</div>
+    <h2>Kiss Day</h2>
+    <p>A kiss is not just a touch of lips… it’s a silent way of saying “You matter to me.”
+         It carries love, care, and emotions that words sometimes cannot express. 
+         When it comes from you, it feels like warmth, comfort, and pure happiness all at once. On this Kiss Day, 
+        I’m sending you a soft, sweet kiss filled with all my love. 💖💋 💋</p>
+    <button onclick="nextCard()">Next ➜</button>
+</div>
+
+<!-- Final Valentine -->
+<div class="card">
+    <div class="emoji">💖</div>
+    <h2>Happy Valentine's Day</h2>
+    <p>Happy Valentine’s Day, bava. Today is not just about love, it’s about us — our memories, 
+        our smiles, our little fights, and the way we always find our way back to each other.
+         You are not just my Valentine for today, you are my choice every single day. 
+         With you, love feels safe, pure, and real. I don’t need big promises or grand gifts… 
+         I just need you by my side, holding my hand and walking with me through everything life brings. 
+        Loving you is the most beautiful part of my life. ❤️🌹💘</p>
+    <button onclick="finalLove()">YES ❤️</button>
+</div>
+
+<!-- Final Message -->
+<div class="card" id="finalCard">
+    <div class="emoji">🥰</div>
+    <h2>I Love You Forever</h2>
+    <p>You are my everything konni times ninnu chala vishiginchi unta but adhi antha na prema ani ardham chesko plz
+        eppudu kopam vachina anni consequences vacina avi ahh day ne shortout cheskundam. nvu natho heartfull undadani ani anukunta
+        konchem darkside kuda share cheskovali okkati kadu anni nvu motham nake kavalii....I LOVE YOU BAVA  ❤️</p>
+</div>
+
+<script>
+    let currentCard = 0;
+    const cards = document.querySelectorAll(".card");
+
+    function nextCard() {
+        cards[currentCard].classList.remove("active");
+        currentCard++;
+        cards[currentCard].classList.add("active");
+    }
+
+    function finalLove() {
+        cards[currentCard].classList.remove("active");
+        document.getElementById("finalCard").classList.add("active");
+    }
+</script>
+
+</body>
+</html>
